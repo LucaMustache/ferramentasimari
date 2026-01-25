@@ -41,7 +41,7 @@ export default function AdminPage() {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    if (password === "Simari2024") setIsLogged(true); 
+    if (password === "Simari2026") setIsLogged(true); 
     else alert("Password errata");
   };
 
