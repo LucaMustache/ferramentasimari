@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { CartProvider } from "./context/CartContext"; // 1. Importiamo il provider
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,11 +21,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="it">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        {/* Rimuoviamo Header e Footer da qui perché 
-           li hai già inseriti dentro page.js. 
-           Il layout deve solo gestire la struttura globale.
-        */}
-        {children}
+        {/* 2. Avvolgiamo children con CartProvider */}
+        <CartProvider>
+          {children}
+        </CartProvider>
       </body>
     </html>
   );
