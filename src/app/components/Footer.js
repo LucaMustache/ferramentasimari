@@ -42,8 +42,8 @@ export default function Footer() {
               Contattaci
             </h3>
             <p className="text-zinc-500 text-sm mb-2">Corso Umberto I, Mileto (VV)</p>
-            <p className="text-zinc-500 text-sm mb-2">Tel: +39 0963 XXXXXX</p>
-            <p className="text-zinc-500 text-sm">Email: info@ferramentasimari.it</p>
+            <p className="text-zinc-500 text-sm mb-2">Tel: +39 0963 338135</p>
+            <p className="text-zinc-500 text-sm">Email: maxsimari@libero.it</p>
           </div>
 
         </div>
@@ -62,7 +62,7 @@ export default function Footer() {
           </div>
           
           <div className="text-zinc-600 text-[10px] md:text-xs uppercase tracking-widest">
-            © {new Date().getFullYear()} Ferramenta e Colori SIMARI – P.IVA IT0000000000. Tutti i diritti riservati.
+            © {new Date().getFullYear()} Ferramenta e Colori SIMARI – P.IVA IT03942830799. Tutti i diritti riservati.
           </div>
         </div>
       </div>
